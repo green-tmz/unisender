@@ -2,7 +2,7 @@
 
 namespace LaravelUnisender\Services;
 
-use Unisender\ApiWrapper\UnisenderApi;
+use LaravelUnisender\ApiWrapper\UnisenderApi;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Client\Response;

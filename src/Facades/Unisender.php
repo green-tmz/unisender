@@ -5,7 +5,7 @@ namespace LaravelUnisender\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Unisender\ApiWrapper\UnisenderApi getApi()
+ * @method static \LaravelUnisender\ApiWrapper\UnisenderApi getApi()
  * @method static array sendSms(array $params)
  * @method static array sendEmail(array $params)
  * @method static array getLists()

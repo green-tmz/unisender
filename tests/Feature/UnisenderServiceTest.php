@@ -144,7 +144,12 @@ class UnisenderServiceTest extends TestCase
     {
         $jsonResponse = '{"result": {"id": 123}, "success": true}';
         
-        $response = $this->unisender->parseResponse($jsonResponse);
+        // Use reflection to access protected method
+        $reflection = new \ReflectionClass($this->unisender);
+        $method = $reflection->getMethod('parseResponse');
+        $method->setAccessible(true);
+        
+        $response = $method->invoke($this->unisender, $jsonResponse);
 
         $this->assertIsArray($response);
         $this->assertArrayHasKey('result', $response);
@@ -175,7 +180,12 @@ class UnisenderServiceTest extends TestCase
     /** @test */
     public function it_handles_false_response()
     {
-        $response = $this->unisender->parseResponse(false);
+        // Use reflection to access protected method
+        $reflection = new \ReflectionClass($this->unisender);
+        $method = $reflection->getMethod('parseResponse');
+        $method->setAccessible(true);
+        
+        $response = $method->invoke($this->unisender, false);
 
         $this->assertIsArray($response);
         $this->assertFalse($response['success']);
@@ -185,7 +195,12 @@ class UnisenderServiceTest extends TestCase
     /** @test */
     public function it_handles_invalid_json_response()
     {
-        $response = $this->unisender->parseResponse('invalid json');
+        // Use reflection to access protected method
+        $reflection = new \ReflectionClass($this->unisender);
+        $method = $reflection->getMethod('parseResponse');
+        $method->setAccessible(true);
+        
+        $response = $method->invoke($this->unisender, 'invalid json');
 
         $this->assertIsArray($response);
         $this->assertFalse($response['success']);
