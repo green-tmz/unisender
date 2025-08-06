@@ -1,0 +1,65 @@
+{
+    "name": "laravel-unisender/unisender",
+    "description": "Unisender API integration for Laravel 12",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "unisender",
+        "sms",
+        "email",
+        "api",
+        "mailing",
+        "newsletter"
+    ],
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com",
+            "homepage": "https://github.com/yourusername"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^9.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelUnisender\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelUnisender\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelUnisender\\UnisenderServiceProvider"
+            ],
+            "aliases": {
+                "Unisender": "LaravelUnisender\\Facades\\Unisender"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
