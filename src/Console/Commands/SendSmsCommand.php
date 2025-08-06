@@ -12,7 +12,7 @@ class SendSmsCommand extends Command
      */
     protected $signature = 'unisender:sms 
                             {phone : Phone number to send SMS to}
-                            {text : SMS text content}
+                            {text : SMS text content} 
                             {--list-id= : List ID to send to multiple contacts (optional)}';
 
     /**
