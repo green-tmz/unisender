@@ -1,22 +1,13 @@
 {
     "name": "laravel-unisender/unisender",
-    "description": "Unisender API integration for Laravel 12",
+    "description": "Unisender API for Laravel 12",
     "type": "library",
     "license": "MIT",
-    "keywords": [
-        "laravel",
-        "unisender",
-        "sms",
-        "email",
-        "api",
-        "mailing",
-        "newsletter"
-    ],
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com",
-            "homepage": "https://github.com/yourusername"
+            "name": "Osnova detsva",
+            "email": "green.tmz@yandex.ru",
+            "homepage": "https://github.com/green-tmz"
         }
     ],
     "require": {

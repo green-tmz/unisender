@@ -312,25 +312,6 @@ UNISENDER_ENABLE_RATE_LIMITING=true
 UNISENDER_RATE_LIMIT_PER_MINUTE=60
 ```
 
-## Тестирование
-
-```bash
-composer test
-```
-
-## Поддержка
-
-Для получения поддержки по Unisender API обратитесь к официальной документации:
-- [Unisender API Documentation](https://www.unisender.com/en/support/category/api/)
-- [Unisender API Documentation (RU)](https://www.unisender.com/ru/support/category/api/)
-
-## Вклад в проект
-
-1. Fork репозиторий
-2. Создайте ветку для новой функции (`git checkout -b feature/amazing-feature`)
-3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
-4. Отправьте в ветку (`git push origin feature/amazing-feature`)
-5. Откройте Pull Request
 
 ## Лицензия
 
