@@ -7,14 +7,8 @@ use Illuminate\Console\Command;
 
 class CheckStatusCommand extends Command
 {
-    /**
-     * The name and signature of the console command.
-     */
     protected $signature = 'unisender:status {--verbose : Show detailed information}';
 
-    /**
-     * The console command description.
-     */
     protected $description = 'Check Unisender API connection status and configuration';
 
     /**

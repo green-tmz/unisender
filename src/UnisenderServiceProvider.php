@@ -38,8 +38,7 @@ class UnisenderServiceProvider extends ServiceProvider
             ], 'unisender-migrations');
 
             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-            
-            // Register console commands
+
             $this->commands([
                 \LaravelUnisender\Console\Commands\SendSmsCommand::class,
                 \LaravelUnisender\Console\Commands\SendEmailCommand::class,

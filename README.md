@@ -166,6 +166,16 @@ php artisan unisender:lists
 php artisan unisender:lists --format=json
 ```
 
+### Проверка статуса API
+
+```bash
+# Базовая проверка
+php artisan unisender:status
+
+# Подробная проверка с тестированием всех эндпоинтов
+php artisan unisender:status --verbose
+```
+
 ## REST API
 
 После установки пакета автоматически регистрируются следующие маршруты:
