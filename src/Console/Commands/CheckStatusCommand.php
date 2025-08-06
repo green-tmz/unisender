@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 class CheckStatusCommand extends Command
 {
-    protected $signature = 'unisender:status {--verbose : Show detailed information}';
+    protected $signature = 'unisender:status';
 
     protected $description = 'Check Unisender API connection status and configuration';
 
@@ -24,11 +24,6 @@ class CheckStatusCommand extends Command
 
         // Test API connection
         $this->testApiConnection($unisender);
-
-        // Show additional info if verbose
-        if ($this->option('verbose')) {
-            $this->showDetailedInfo($unisender);
-        }
 
         return 0;
     }
